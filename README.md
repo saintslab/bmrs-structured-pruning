@@ -8,8 +8,8 @@ We implement the following pruning layers:
 - `LogUniformPruningLayer`: The baseline multiplicative noise layer using SNR for pruning from 
 Neklyudov et al. 2017
 - `LogUniformL2NormPruningLayer`: Multiplicative noise layer using the L2 norm of input weights for pruning
-- `LogUniformApproximateDiracBMRPruningLayer`: $$BMRS_{N}$$ pruning layer using an approximate dirac spike at 0
-- `LogUniformCDFBMRPruningLayer`: $$BMRS_{U}$$ pruning layer using a reduced log uniform distribution
+- `LogUniformApproximateDiracBMRPruningLayer`: $BMRS_{N}$ pruning layer using an approximate dirac spike at 0
+- `LogUniformCDFBMRPruningLayer`: $BMRS_{U}$ pruning layer using a reduced log uniform distribution
 
 The code for training with continuous pruning is in `train.py`; The code to run post-training pruning and generate
 compression vs. accuracy statistics is in `compression_vs_accuracy_separate.py`; And the code to generate the plots
@@ -84,7 +84,7 @@ optional arguments:
                         A metrics file to pull the compression percentage from. Only for SNR and magnitude pruning
 ```
 
-For example, to train Lenet5 on Cifar10 using $$BMRS_{N}$$ as done in the paper, execute the following:
+For example, to train Lenet5 on Cifar10 using $BMRS_{N}$ as done in the paper, execute the following:
 
 ```
 python train.py \
