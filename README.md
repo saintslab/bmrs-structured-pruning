@@ -2,6 +2,8 @@
 
 Source code to reproduce the experimental results in the paper "BMRS: Bayesian Model Reduction for Structured Pruning".
 
+Preprint: https://arxiv.org/abs/2406.01345
+
 The pruning layers are defined in `modules/layers` and `modules/util`. The classifiers are defined in `modules/classifiers`.
 We implement the following pruning layers:
 
@@ -100,5 +102,5 @@ python train.py \
     --kl_averaging mean \
     --learning_rate 0.001026894323862342 \
     --n_epochs 50 \
-    --pruning_class LogUniformApproximateDiracBMRPruningLayerpython
+    --pruning_class LogUniformApproximateDiracBMRPruningLayer
 ```
